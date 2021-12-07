@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/main.css" />
+		<meta charset="utf-8" />
+		<style>
+			.picture-holder a {
+				display: block;
+				margin-bottom: 10px;
+			}
+		</style>
+		
+		<script>
+			function increase_cat() {
+				document.getElementById("cat").style.width = "300px";
+				document.getElementById("hdr1").innerText = "Мяу!";
+			}
+		</script>
+		
+		<title>Кошка</title>
+	</head>
+	<body>
+		<h1 id="hdr1">Это кошка</h1>
+		<div class="picture-holder">
+			<a href="index_.html">Оглавление сайта</a> 
+			<img src="images/Cat.jpg" onclick="increase_cat();" 
+						style="width:200px" id="cat" />
+		</div>
+	</body>
+</html>
