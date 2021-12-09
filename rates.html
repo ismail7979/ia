@@ -1,0 +1,27 @@
+<html>
+	<head>
+	 <!-- Это комментарий HTML -->
+    <meta charset="utf-8" />
+     <script>
+     function getRates() {
+     var url= "https://www.cbr-xml-daily.ru/daily_json.js";
+     var xhr = new  XMLHttpRequest();
+     xhr.open("GET", url, false);
+     xhr.send();
+     var text= xhr.responseText;
+     //console.log(text);
+     var rates=JSON.parse(text);
+     console.log(rates);
+     var azn=rates.Valute.AZN.Value;
+     document.getElementById("display").innerText=azn;
+     }
+     </script>
+	</head>
+	<body>
+		<h1> Здесь можно узнать курсы валют</h1>
+        <button onclick="getRates();">Получить</button>
+        <div id="display">
+
+        </div>
+	</body>
+</html>
