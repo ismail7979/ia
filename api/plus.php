@@ -12,8 +12,8 @@ $z = $x + $y;
 // 3. Секрет в коде
 //$conn = mysqli_connect("localhost","root","","calc");
 // 4. Код, уязвимый для Sql-injection
-include("F:/AppParams/params.php");
-$conn = mysqli_connect($DB_URL, $DB_NAME ,$DB_PWD, $DB_USER);
+include("C:/AppParams/params.php");
+$conn = mysqli_connect($DB_URL,$DB_USER,$DB_PWD,$DB_NAME);
 $sql = "INSERT INTO log(Number1,Number2,Result,UserID) VALUES($x,$y,$z,'anonym')";
 mysqli_query($conn,$sql);
 //echo(mysqli_error($conn));
