@@ -9,6 +9,8 @@
     
     </head>
     <body>
+
+        <a href="index_.html">Оглавление сайта</a> 
         <h1>Считаем щелчки</h1>
         <form>
             <button id="btn1">Щелкни здесь</button>

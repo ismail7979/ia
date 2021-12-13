@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="styles/main.css" type="text/css" />
 	 <!-- Это комментарий HTML -->
     <meta charset="utf-8" />
+    
      <script>
      function getRates() {
      var url= "https://www.cbr-xml-daily.ru/daily_json.js";
@@ -15,17 +16,18 @@
      console.log(rates);
      var azn=rates.Valute.AZN.Value;
      document.getElementById("display").innerText=azn;
-     var azn=rates.Valute.USD.Value;
-     document.getElementById("display").innerText=usd;
-     
-     }
-
-
-     </script>
+            }
+       
+        </script>
+       
 	</head>
 	<body>
+                <a href="index_.html">Оглавление сайта</a> 
+
 		<h1> Здесь можно узнать курсы валют</h1>
+                 
         <button onclick="getRates();">Получить</button>
+       
         <div id="display">
 
         </div>

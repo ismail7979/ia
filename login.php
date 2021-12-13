@@ -1,5 +1,6 @@
 <html>
     <head>
+    <link  href="styles/main.css" rel="stylesheet" type="text/css"/>
         <!-- Это комментарий HTML -->
         <meta charset="utf-8" />
 

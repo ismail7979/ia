@@ -11,7 +11,7 @@
 
 <html>
     <head>
-        
+    <link  href="styles/main.css" rel="stylesheet" type="text/css"/>
         <!-- Это комментарий HTML -->
         <meta charset="utf-8" />
 
@@ -61,6 +61,7 @@
         </script>
     </head>
     <body>
+        <a href="index_.html">Оглавление сайта</a> 
         <h1>Калькулятор</h1>
         <input id="x" /> <br />
         <input id="y" /> <br />

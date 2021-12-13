@@ -1,3 +1,8 @@
+<html>
+<head>
+<link  href="styles/main.css" rel="stylesheet" type="text/css"/>
+</head>
+</html>
 <?php
 
 session_start();
