@@ -5,7 +5,7 @@
     <head>
         <!-- Это комментарий HTML -->
         <meta charset="utf-8" />
-
+        <link  href="styles/main.css" rel="stylesheet" type="text/css"/>
     
     </head>
     <body>

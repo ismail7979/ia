@@ -1,17 +1,20 @@
 html {
 
 	color: #0c0c0e;
-	background-color: #804f4f;
+	background-color: #b8eecd;
 }
-
+p {
+	color: rgb(236, 9, 9);
+  }
 
 h1 {
-	color: #3f2e2e;
-	background-color: #5c2d2d;
+	color: #030303;
+	background-color: #bbd2d6;
+	
 }
 	h3 {
-		color: #1a5ab9;
-		background-color: #613a3a;
+		color: #0a0a0a;
+		background-color: #e9cfcf;
 	}
 
 
