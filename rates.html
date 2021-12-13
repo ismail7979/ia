@@ -1,5 +1,6 @@
 <html>
 	<head>
+        <link rel="stylesheet" href="styles/main.css" type="text/css" />
 	 <!-- Это комментарий HTML -->
     <meta charset="utf-8" />
      <script>
@@ -14,7 +15,12 @@
      console.log(rates);
      var azn=rates.Valute.AZN.Value;
      document.getElementById("display").innerText=azn;
+     var azn=rates.Valute.USD.Value;
+     document.getElementById("display").innerText=usd;
+     
      }
+
+
      </script>
 	</head>
 	<body>
