@@ -61,6 +61,7 @@
         </script>
     </head>
     <body>
+    <a href="index_.html"> Индекс</a>
         <a href="index_.html">Оглавление сайта</a> 
         <h1>Калькулятор</h1>
         <input id="x" /> <br />

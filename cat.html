@@ -8,23 +8,27 @@
 				margin-bottom: 10px;
 			}
 		</style>
-		
-		<script>
+				<script>
 			function increase_cat() {
-				document.getElementById("cat").style.width = "300px";
+				document.getElementById("cat").style.width = "200px";
 				document.getElementById("hdr1").innerText = "Мяу!";
 			}
+					function mur() {
+				document.getElementById("mur").play();
+			}
+			function stop_mur() {
+				document.getElementById("mur").pause();
+			}
 		</script>
-		
-		<title>Кошка</title>
+				<title>Кошка</title>
 	</head>
 	<body>
 		<a href="index_.html">Оглавление сайта</a> 
 		<h1 id="hdr1">Это кошка</h1>
 		<div class="picture-holder">
-			
-			<img src="images/Cat.jpg" onclick="increase_cat();" 
-						style="width:200px" id="cat" />
+		<img src="images/cat.jpg" onclick="increase_cat();" style="width:400px" id="cat" onmouseover="mur();" onmouseout="stop_mur();"/>
 		</div>
+		<audio src="mur.mp3" loop autoplay id="mur"></audio>
+				</div>
 	</body>
 </html>
