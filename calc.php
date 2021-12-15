@@ -67,7 +67,9 @@
         </script>
     </head>
     <body>
+        <div>
         <a href="index_.html">Оглавление сайта</a> 
+        </div>
         <a href="billing.php">Вычисления</a>
         <h1>Калькулятор</h1>
         <input id="x" /> <br />

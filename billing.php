@@ -51,9 +51,9 @@
         
     </head>
     <body onload="getLog();">
-    
+         <div>
         <a href="index_.html">Оглавление сайта</a>
-
+         </div>
         <a href="calc.php">Калькулятор</a>
         <h1>Ваши вычисления</h1>
         <div id="display"></div>
