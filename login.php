@@ -7,7 +7,7 @@
     
     </head>
     <body>
-    <a href="index_.html"> Индекс</a>
+    <a href="index_.html"> Оглавление сайта</a>
         <h1>Login, please!</h1>
         <form method="post" action="check_login.php">
             <input name="user" /> <br />

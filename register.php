@@ -1,5 +1,6 @@
 <html>
     <head>
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
         <meta charset="utf-8" />
         <title>Register</title>
     </head>
@@ -30,6 +31,9 @@
         
     ?>
     </body>
+    <div>
+        <a href="index_.html">Оглавление сайта</a> 
+        </div>
         <h1>Register, please!</h1>
         <form method="post">
             <input name="user" /> <br />
