@@ -12,7 +12,10 @@
 
 <html>
     <head>
-        
+     
+    <link  href="styles/main.css" rel="stylesheet" type="text/css"/>
+    <span style="word-spacing: 10px"></span></code>
+       
         <!-- Это комментарий HTML -->
         <meta charset="utf-8" />
 
@@ -33,8 +36,10 @@
                     console.log(calc);
                     var x = calc[1];
                     var y = calc[2];
-                    var z = calc[3];
-                    out += "x:" + x + " y:" + y + " Result: " + z + "<br/>";
+                    var result = calc[3];
+                    var user = calc[4];
+                    var Timestamp = calc[5];
+                    out += "X:" + x + " Y:" + y + " Итог:" + result + "    Пользователь: " + user +  " Время совершения покупки " + Timestamp +"<br />";
                     counter += 1;
                 }
                 document.getElementById("display").innerHTML = out;
@@ -42,11 +47,14 @@
                     "С вас, сударь, $" + counter;
             }
           
-
         </script>
+        
     </head>
     <body onload="getLog();">
-        <a href="index_.html">Индекс</a>
+    
+        <a href="index_.html">Оглавление сайта</a>
+
+        <a href="calc.php">Калькулятор</a>
         <h1>Ваши вычисления</h1>
         <div id="display"></div>
         <h2 id="amount"></h2>

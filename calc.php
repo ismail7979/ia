@@ -52,7 +52,13 @@
             function minus() {
                 var x = document.getElementById("x").value;
                 var y = document.getElementById("y").value;
-                var z = parseInt(x) - parseInt(y);
+                var url = "api/minus.php?x=" + x + "&y=" + y;
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET",url,false);
+                xhr.send();
+                var z = xhr.responseText;
+
+                //var z = parseInt(x) - parseInt(y);
                 document.getElementById("z").value = z;
                 document.getElementById("btn1").className = "";
                 document.getElementById("btn2").className = "pressed";
@@ -61,8 +67,8 @@
         </script>
     </head>
     <body>
-    <a href="index_.html"> Индекс</a>
         <a href="index_.html">Оглавление сайта</a> 
+        <a href="billing.php">Вычисления</a>
         <h1>Калькулятор</h1>
         <input id="x" /> <br />
         <input id="y" /> <br />

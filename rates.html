@@ -14,24 +14,42 @@
      //console.log(text);
      var rates=JSON.parse(text);
      console.log(rates);
-     var azn=rates.Valute.AZN.Value;
-     document.getElementById("display").innerText=azn;
+                var azn=rates.Valute.AZN.Value;
+                document.getElementById("display").innerText=azn;
+                var USD = rates.Valute.USD.Value;
+                document.getElementById("display3").innerText = USD;
+                var EUR = rates.Valute.EUR.Value;
+                document.getElementById("display4").innerText = EUR;
+                var GBP = rates.Valute.GBP.Value;
+                document.getElementById("display2").innerText = GBP;
             }
-       
-                
-                  
+                                       
                    </script>
-
 	</head>
 	<body>
-                <a href="index_.html">Оглавление сайта</a> 
+        <a href="index_.html">Оглавление сайта</a> 
 
-		<h1> Здесь можно узнать курсы валют</h1>
+	<h1> Здесь можно узнать курсы валют</h1>
                  
         <button onclick="getRates();">Получить</button>
-       
+
+         <div>
+        Манат:
         <div id="display">
 
         </div>
+        Фунт:
+        <div id="display2">
+
+        </div>
+        Доллар:
+        <div id="display3">
+
+        </div>
+        Евро:
+        <div id="display4">
+
+        </div>
+        
 	</body>
 </html>

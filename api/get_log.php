@@ -15,7 +15,7 @@
     //echo getenv("MYAPP_CONFIG")
     include(getenv("MYAPP_CONFIG"));
             
-            $sql = "SELECT ID, Number1, Number2, Result, UserID 
+            $sql = "SELECT ID, Number1, Number2, Result, UserID,Timestamp
                     FROM log
                     WHERE UserID = '$user'
                     
