@@ -13,7 +13,7 @@
     //echo($user);
 
     //echo getenv("MYAPP_CONFIG")
-    include(getenv("MYAPP_CONFIG"));
+    include ('/var/www/html/params.php');
             
             $sql = "SELECT ID, Number1, Number2, Result, UserID,Timestamp
                     FROM log
