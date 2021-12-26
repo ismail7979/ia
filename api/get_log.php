@@ -15,7 +15,7 @@
     //echo getenv("MYAPP_CONFIG")
     include ('/var/www/html/params.php');
             
-            $sql = "SELECT ID, Number1, Number2, Result, UserID,Timestamp
+            $sql = "SELECT ID, Number1, Number2, Result, UserID
                     FROM log
                     WHERE UserID = '$user'
                     
