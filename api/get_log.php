@@ -7,15 +7,12 @@
         echo('<meta http-equiv="refresh" content="2; URL=../login.php">');
         die("Требуется логин!");
     }
-
     $user = $_SESSION["user"];
-
     //echo($user);
-
     //echo getenv("MYAPP_CONFIG")
     include ('/var/www/html/params.php');
-            
-            $sql = "SELECT ID, Number1, Number2, Result, UserID
+          
+            $sql = "SELECT ID, Number1, Number2, Result, UserID,Timestamp
                     FROM log
                     WHERE UserID = '$user'
                     
